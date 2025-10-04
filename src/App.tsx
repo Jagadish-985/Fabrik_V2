@@ -7,7 +7,17 @@ export default function App() {
   const [currentView, setCurrentView] = useState<'login' | 'signup'>('login')
 
   return (
-    <div className="w-screen h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+    <div 
+      className="w-screen h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center"
+      style={{
+        width: '100vw',
+        height: '100vh',
+        background: 'linear-gradient(to bottom right, #0f172a, #581c87, #0f172a)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+    >
       <Canvas 
         camera={{ position: [0, 0, 5], fov: 50 }}
         gl={{ antialias: true }}

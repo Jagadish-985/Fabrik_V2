@@ -521,3 +521,7 @@ html {
   inherits: false;
   initial-value: 100%;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
